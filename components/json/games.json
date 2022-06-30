@@ -1,125 +1,130 @@
 [
   {
     "name": "HORIZON",
-    "img": "speed.jpg",
+    "img": "horizon.jpg",
      "id":"1" ,
      "ratings":"5",
      "category":"passive",
      "date":"" ,
      "status":"passive",
-     "":""
+     "open":"horizon2.png"
     
   },
   {
     "name": "FORTNITE",
-    "img": "space.webp",
+    "img": "fortnite.jpg",
      "id":"2",
      "category":"current",
      "date":"" ,
-     "status":"new-game"
+     "status":"new-game",
+     "open":"fortnite.jpg"
   },
   {
     "name": "FIFA 23",
-    "img": "0_23.jpg",
+    "img": "fifa 23.webp",
      "id":"3",
      "ratings":"5 stars",
      "category":"",
      "date":"" ,
-     "status":"recent"
+     "status":"recent",
+     "open":"0_23.jpg"
     } ,
     {
       "name": "Tomb raider",
-      "img": "speed.jpg",
+      "img": "tomb-raider1.jpg",
        "id":"4" ,
        "ratings":"5",
        "category":"passive",
        "date":"" ,
-       "status":"passive"   
+       "status":"passive"  ,
+       "open":"tomb-raider.webp"
       
     },
     {
-      "name": "UFC 3",
-      "img": "speed.jpg",
+      "name": "UFC 4",
+      "img": "ufc4.webp",
        "id":"5" ,
        "ratings":"5",
        "category":"",
        "date":"" ,
-       "status":"recent"
+       "status":"recent",
+       "open":"ufc4Open.jpeg"
     },
     {
       "name": "Naruto: Ninja storm 4",
-      "img": "speed.jpg",
+      "img": "naruto-stormr4.webp",
        "id":"6" ,
        "ratings":"5",
        "category":"",
        "date":"" ,
-       "status":"recent"
+       "status":"recent",
+       "open":"naruto-open.jpg"
       
     },
     {
       "name": "God of war",
-      "img": "speed.jpg",
+      "img": "god-of-war.jpg",
        "id":"7" ,
        "ratings":"5",
        "category":"",
        "date":"" ,
        "status":"current",
-       "":""
+       "open":"god-war-open.jpg"
       
     },
     {
       "name": "Call of duty: Black ops 4",
-      "img": "speed.jpg",
+      "img": "call-of-duty4.webp",
        "id":"8" ,
        "ratings":"5",
        "category":"",
        "date":"" ,
        "status":"passive",
-       "":""
+       "open":"call-of-duty4.webp"
       
     },
     {
       "name": "The last of us",
-      "img": "speed.jpg",
+      "img": "last-of-us.webp",
        "id":"9" ,
        "ratings":"5",
        "category":"",
        "date":"" ,
        "status":"current",
-       "":""
+       "open":"last-of-us-open.webp"
       
     },
     {
       "name": "Injustice",
-      "img": "speed.jpg",
+      "img": "injustice.webp",
        "id":"10" ,
        "ratings":"5",
        "category":"",
        "date":"" ,
        "status":"passive",
-       "":""
+       "open":"injustice-open.jpg"
       
     },
     {
       "name": "Grand Theft Auto V",
-      "img": "speed.jpg",
+      "img": "gta-5.webp",
        "id":"11" ,
        "ratings":"5",
        "category":"",
        "date":"" ,
        "status":"passive",
-       "":""
+       "open":"gta5-open.jpg"
       
     },
     {
       "name": "2K 19",
-      "img": "speed.jpg",
+      "img": "2k19.webp",
        "id":"12" ,
        "ratings":"5",
        "category":"",
        "date":"" ,
        "status":"current",
-       "":""
+       "open":"2k19-open.webp"
       
     },
     {
@@ -130,28 +135,28 @@
        "category":"",
        "date":"" ,
        "status":"passive",
-       "":""
+       "open":"horizon2.png"
       
     },
     {
       "name": "Marta is dead",
-      "img": "speed.jpg",
+      "img": "Martha-is-Dead.jpeg",
        "id":"14" ,
        "ratings":"5",
        "category":"",
        "date":"" ,
        "status":"current",
-       "":""
+       "open":"Martha-is-Dead-open.jpg"
     },
     {
-      "name": "Uncharted 4 : blood fall",
-      "img": "speed.jpg",
+      "name": "Hitmen: Abosolution",
+      "img": "hitmen3.jpg",
        "id":"12" ,
        "ratings":"5",
        "category":"",
        "date":"" ,
        "status":"current",
-       "":""
+       "open":"hitmen-open.jpg"
       
     }
     

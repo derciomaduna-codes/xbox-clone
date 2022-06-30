@@ -36,3 +36,18 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background: #b30000; 
 } */
+
+
+.box{
+  border-radius: 100%;
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  /* animation-delay: ; */
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
