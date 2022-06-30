@@ -8,13 +8,17 @@ import { useContext } from 'react';
 import Link from 'next/link';
 import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
 import Battery50Icon from '@mui/icons-material/Battery50';
+import Time from '../components/Time'
+
+
+
+
 
 const Navbar = () => {
-   const {userName , darkTheme , setDarkTheme , enter , setEnter } = useContext(userContext)
+   const {userName , darkTheme , setDarkTheme , setShowNav , showNav } = useContext(userContext)
    
   return (
-    
-      <Grid sx={styles.container} container>
+      <Grid  sx={ showNav ? styles.container:styles.none} container>
           <Grid sx={{...styles.item}} item md={3} sm={3} xs={12}>
                 <Box sx={styles.user}>
                     <Typography sx={{fontWeight:'bold'}} color={'#fff'}>
@@ -30,7 +34,7 @@ const Navbar = () => {
                  </Box>
                  <Box sx={styles.navLink}>
                    <Typography fontWeight="bold" fontSize={16}  color={'#fff'}>
-                        <Link href='/'>Mixer</Link>
+                        <Link href='/mixer'>Mixer</Link>
                    </Typography>
                  </Box>
                  <Box sx={styles.navLink}>
@@ -40,26 +44,25 @@ const Navbar = () => {
                  </Box>
                  <Box sx={styles.navLink}>
                    <Typography fontWeight="bold" fontSize={16}  color={'#fff'}>
-                        <Link href='/'>Game Pass</Link>
+                        <Link href='#gamepass'>Game Pass</Link>
                    </Typography>
                  </Box>
                  <Box sx={styles.navLink}>
                    <Typography fontWeight="bold" fontSize={16}  color={'#fff'}>
-                        <Link href='/'>Store</Link>
+                        <Link href='/store'>Store</Link>
                    </Typography>
                  </Box>
           </Grid>
-          <Grid sx={{...styles.item ,justifyContent:'flex-end'}} item md={3} sm={3} xs={12}>
+          <Grid sx={{...styles.item,justifyContent:'flex-end'}} item md={3} sm={3} xs={12}>
                 <Box>
                    <HeadsetMicIcon sx={{color:'#FFF'}}/>
                    <Battery50Icon sx={{color:'#FFF'}}/>
                 </Box>
                  <Typography variant='h3' fontSize={13} color={'#fff'}>
-                  {'15:40'}
+                  <Time/>
                  </Typography>
           </Grid>
       </Grid>
-   
   )
 }
 
@@ -70,8 +73,10 @@ const styles = {
   container:{
     // border:'1px solid red',
     height:'100px' ,
-    background:'rgba(0,0,0,0.2)',
+    background:'rgba(0,0,0,0.1)',
+    // display: 'none',
     padding: '0 100px',
+    position:'fixed'
 
   } ,
   user:{
@@ -94,6 +99,9 @@ const styles = {
       // border:'1px solid #fff' ,
       padding:'0 10px' ,
       cursor:'pointer'
+  },
+  none:{
+    display:'none'
   }
 }
 

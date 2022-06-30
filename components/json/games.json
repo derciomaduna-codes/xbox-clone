@@ -1,18 +1,160 @@
 [
   {
     "name": "HORIZON",
-    "background": "default.webp",
-     "id":"1"
+    "img": "speed.jpg",
+     "id":"1" ,
+     "ratings":"5",
+     "category":"passive",
+     "date":"" ,
+     "status":"passive",
+     "":""
+    
   },
   {
     "name": "FORTNITE",
-    "background": "",
-     "id":"2"
+    "img": "space.webp",
+     "id":"2",
+     "category":"current",
+     "date":"" ,
+     "status":"new-game"
   },
   {
-    "name": "FIFA 22",
-    "background": "",
-     "id":"2"
-  } 
- 
+    "name": "FIFA 23",
+    "img": "0_23.jpg",
+     "id":"3",
+     "ratings":"5 stars",
+     "category":"",
+     "date":"" ,
+     "status":"recent"
+    } ,
+    {
+      "name": "Tomb raider",
+      "img": "speed.jpg",
+       "id":"4" ,
+       "ratings":"5",
+       "category":"passive",
+       "date":"" ,
+       "status":"passive"   
+      
+    },
+    {
+      "name": "UFC 3",
+      "img": "speed.jpg",
+       "id":"5" ,
+       "ratings":"5",
+       "category":"",
+       "date":"" ,
+       "status":"recent"
+    },
+    {
+      "name": "Naruto: Ninja storm 4",
+      "img": "speed.jpg",
+       "id":"6" ,
+       "ratings":"5",
+       "category":"",
+       "date":"" ,
+       "status":"recent"
+      
+    },
+    {
+      "name": "God of war",
+      "img": "speed.jpg",
+       "id":"7" ,
+       "ratings":"5",
+       "category":"",
+       "date":"" ,
+       "status":"current",
+       "":""
+      
+    },
+    {
+      "name": "Call of duty: Black ops 4",
+      "img": "speed.jpg",
+       "id":"8" ,
+       "ratings":"5",
+       "category":"",
+       "date":"" ,
+       "status":"passive",
+       "":""
+      
+    },
+    {
+      "name": "The last of us",
+      "img": "speed.jpg",
+       "id":"9" ,
+       "ratings":"5",
+       "category":"",
+       "date":"" ,
+       "status":"current",
+       "":""
+      
+    },
+    {
+      "name": "Injustice",
+      "img": "speed.jpg",
+       "id":"10" ,
+       "ratings":"5",
+       "category":"",
+       "date":"" ,
+       "status":"passive",
+       "":""
+      
+    },
+    {
+      "name": "Grand Theft Auto V",
+      "img": "speed.jpg",
+       "id":"11" ,
+       "ratings":"5",
+       "category":"",
+       "date":"" ,
+       "status":"passive",
+       "":""
+      
+    },
+    {
+      "name": "2K 19",
+      "img": "speed.jpg",
+       "id":"12" ,
+       "ratings":"5",
+       "category":"",
+       "date":"" ,
+       "status":"current",
+       "":""
+      
+    },
+    {
+      "name": "Need For speed",
+      "img": "speed.jpg",
+       "id":"13" ,
+       "ratings":"5",
+       "category":"",
+       "date":"" ,
+       "status":"passive",
+       "":""
+      
+    },
+    {
+      "name": "Marta is dead",
+      "img": "speed.jpg",
+       "id":"14" ,
+       "ratings":"5",
+       "category":"",
+       "date":"" ,
+       "status":"current",
+       "":""
+    },
+    {
+      "name": "Uncharted 4 : blood fall",
+      "img": "speed.jpg",
+       "id":"12" ,
+       "ratings":"5",
+       "category":"",
+       "date":"" ,
+       "status":"current",
+       "":""
+      
+    }
+    
+
+    
 ]
