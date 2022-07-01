@@ -22,13 +22,13 @@ export default function SwiperCoverFlow() {
   const { openGame, setOpenGame, passedGameDetails, setPassedGameDetails } = useContext(userContext)
 
   const showGameStart = (game) => {
-    
+
     setOpenGame(true)
 
     setPassedGameDetails({
-      name:game.name ,
-      img:game.img,
-      open:game.open
+      name: game.name,
+      img: game.img,
+      open: game.open
     })
 
   }
@@ -37,33 +37,33 @@ export default function SwiperCoverFlow() {
   return (
     <>
 
-          <Swiper
-            effect={"coverflow"}
-            grabCursor={true}
-            centeredSlides={true}
-            slidesPerView={"auto"}
-            coverflowEffect={{
-              rotate: 50,
-              stretch: 0,
-              depth: 100,
-              modifier: 1,
-              slideShadows: true,
-            }}
-            pagination={false}
-            modules={[EffectCoverflow, Pagination]}
-            className="mySwiper"
-            style={styles.container}
-          >
+      <Swiper
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={"auto"}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        pagination={false}
+        modules={[EffectCoverflow, Pagination]}
+        className="mySwiper"
+        style={styles.container}
+      >
 
-            {games.map(game => (
+        {games.map(game => (
 
-              <SwiperSlide onClick={() => showGameStart(game) } key={game.id} style={styles.swiperSlide}>
-                <img style={{ objectFit: 'contain' }} width="100%" height="300px" src={game.img} />
-                <Typography color="#fff" fontWeight={'bold'}>{game.name}</Typography>
-              </SwiperSlide>
-            ))}
+          <SwiperSlide onClick={() => showGameStart(game)} key={game.id} style={styles.swiperSlide}>
+            <img style={{ objectFit: 'contain' }} width="100%" height="300px" src={game.img} />
+            <Typography color="#fff" fontWeight={'bold'}>{game.name}</Typography>
+          </SwiperSlide>
+        ))}
 
-          </Swiper>
+      </Swiper>
 
     </>
   );

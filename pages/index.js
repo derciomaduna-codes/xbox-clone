@@ -11,6 +11,7 @@ import RecentGames from '../components/games/recentGames'
 import SwiperEffectCube from '../components/swipers/SwiperEffectCube'
 import SwiperCoverFlow from '../components/swipers/SwiperCoverFlow'
 import GameStart from '../components/utils/GameStart'
+import Navbar from '../components/Navbar'
 
 export default function Home() {
 
@@ -20,7 +21,7 @@ export default function Home() {
 
   const [xboxImage, setXboxImage] = useState(true)
 
-  const { setShowNav , openGame  , setOpenGame } = useContext(userContext)
+  const { setShowNav, openGame, setOpenGame } = useContext(userContext)
 
   useEffect(() => {
     setTimeout(() => {
@@ -51,12 +52,13 @@ export default function Home() {
       :
       //loading is set to false
       <Box sx={{ ...styles.container, background: `url(${background})` }}>
-        <GameStart/>
+        <Navbar />
+        <GameStart />
         <SectionHeader title={'All games'} />
         <Grid container sx={styles.content}>
           <Grid sx={{ display: 'flex', gap: 1, flexWrap: 'wrap' }} item md={12}>
-            {/* <RecentGames/> */}
-        <SwiperCoverFlow/>
+            {/* this is a test */}
+            <SwiperCoverFlow /> 
           </Grid>
         </Grid>
 
