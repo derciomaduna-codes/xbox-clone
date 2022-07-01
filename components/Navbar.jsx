@@ -8,13 +8,14 @@ import { useContext } from 'react';
 import Link from 'next/link';
 import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
 import Battery50Icon from '@mui/icons-material/Battery50';
-import Time from '../components/Time'
+import Time from '../components/utils/Time'
 
 
 
 
 
 const Navbar = () => {
+  
    const {userName , darkTheme , setDarkTheme , setShowNav , showNav } = useContext(userContext)
    
   return (
@@ -29,12 +30,12 @@ const Navbar = () => {
           <Grid sx={{...styles.item, justifyContent:'space-around'}} item md={6} sm={6} xs={12}>
                  <Box sx={styles.navLink}>
                    <Typography fontWeight="bold"  fontSize={16}  color={'#fff'}>
-                        <Link href='/'>Home</Link>
+                        <Link onClick={()=> setShowNav(false)} href='/'>Home</Link>
                    </Typography>
                  </Box>
                  <Box sx={styles.navLink}>
                    <Typography fontWeight="bold" fontSize={16}  color={'#fff'}>
-                        <Link href='/mixer'>Mixer</Link>
+                        <Link href='/'>Mixer</Link>
                    </Typography>
                  </Box>
                  <Box sx={styles.navLink}>
@@ -44,7 +45,7 @@ const Navbar = () => {
                  </Box>
                  <Box sx={styles.navLink}>
                    <Typography fontWeight="bold" fontSize={16}  color={'#fff'}>
-                        <Link href='#gamepass'>Game Pass</Link>
+                        <Link href='/'>Game Pass</Link>
                    </Typography>
                  </Box>
                  <Box sx={styles.navLink}>
@@ -76,7 +77,8 @@ const styles = {
     background:'rgba(0,0,0,0.1)',
     // display: 'none',
     padding: '0 100px',
-    position:'fixed'
+    position:'fixed',
+    top:0
 
   } ,
   user:{

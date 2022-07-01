@@ -7,7 +7,7 @@
      "category":"passive",
      "date":"" ,
      "status":"passive",
-     "open":"horizon2.png"
+     "cover":"horizon2.png"
     
   },
   {
@@ -16,8 +16,8 @@
      "id":"2",
      "category":"current",
      "date":"" ,
-     "status":"new-game",
-     "open":"fortnite.jpg"
+     "status":"current",
+     "cover":"fortnite.jpg"
   },
   {
     "name": "FIFA 23",
@@ -84,7 +84,7 @@
       
     },
     {
-      "name": "The last of us",
+      "name": "The last of us 2",
       "img": "last-of-us.webp",
        "id":"9" ,
        "ratings":"5",
