@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
       name:"",
       img:"",
       description:"",
-      cover:""
+      open:""
   })
 
   return (
