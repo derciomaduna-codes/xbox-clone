@@ -16,7 +16,7 @@
      "id":"2",
      "category":"current",
      "date":"" ,
-     "status":"new-game",
+     "status":"current",
      "open":"fortnite.jpg"
   },
   {
@@ -84,7 +84,7 @@
       
     },
     {
-      "name": "The last of us",
+      "name": "The last of us 2",
       "img": "last-of-us.webp",
        "id":"9" ,
        "ratings":"5",
