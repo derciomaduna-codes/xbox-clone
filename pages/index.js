@@ -72,7 +72,7 @@ const styles = {
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
-    paddingTop: '100px',
+    // paddingTop: '100px',
     // border: '1px solid #fff'
 
     // background: `url('deon')`

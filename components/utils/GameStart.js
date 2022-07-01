@@ -20,8 +20,8 @@ const GameStart = () => {
    <Box sx={openGame ? styles.container : styles.none}>
           <Grid container>
                  <Grid sx={{...styles.item}} item md={9}>
-                            <button onClick={()=> setOpenGame(false)}>Close game</button>
-                            <img src={passedGameDetails.cover} width={200} height={200} />
+                            {/* <img src={passedGameDetails.open} width={200} height={200} />
+                            <button onClick={()=> setOpenGame(false)}>Close game</button> */}
                  </Grid>
                  <Grid sx={{...styles.item}} item md={9}>
                           

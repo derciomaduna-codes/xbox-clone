@@ -7,7 +7,7 @@
      "category":"passive",
      "date":"" ,
      "status":"passive",
-     "cover":"horizon2.png"
+     "open":"horizon2.png"
     
   },
   {
@@ -17,7 +17,7 @@
      "category":"current",
      "date":"" ,
      "status":"current",
-     "cover":"fortnite.jpg"
+     "open":"fortnite.jpg"
   },
   {
     "name": "FIFA 23",

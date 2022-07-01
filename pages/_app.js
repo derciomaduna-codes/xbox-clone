@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import { userContext } from '../components/context/context'
 import { useContext, useState } from 'react'
-import Layout from '../components/utils/Layout'
+// import Layout from '../components/utils/Layout'
 
 
 function MyApp({ Component, pageProps }) {
@@ -19,9 +19,9 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <userContext.Provider value={{ userName: 'schadrack', darkTheme, setDarkTheme, showNav, setShowNav, openGame, setOpenGame, passedGameDetails ,setPassedGameDetails }} >
-      <Layout>
+      {/* <Layout> */}
         <Component {...pageProps} />
-      </Layout>
+      {/* </Layout> */}
     </userContext.Provider>
   )
 }

@@ -22,10 +22,13 @@ export default function SwiperCoverFlow() {
   const { openGame, setOpenGame, passedGameDetails, setPassedGameDetails } = useContext(userContext)
 
   const showGameStart = (game) => {
+    
     setOpenGame(true)
+
     setPassedGameDetails({
       name:game.name ,
-      img:game.img
+      img:game.img,
+      open:game.open
     })
 
   }
