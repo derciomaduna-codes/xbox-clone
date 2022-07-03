@@ -11,22 +11,67 @@ import gameData from '../../components/json/games.json'
 
 const GameStart = () => {
 
-  const { openGame, setOpenGame, passedGameDetails, setPassedGameDetails } = useContext(userContext)
+  const [playable , setPlayable] = useState(false)
+
+  const { openGame, setOpenGame, passedGameDetails, setPassedGameDetails, setShowComp } = useContext(userContext)
+
+
+  const showNavbar = () => {
+    setShowComp(true)
+    setOpenGame(false)
+  }
+  const playGame = ()=>{
+    //when clicks the button should play the game : drawer that consist of the iframe consisting the games
+    
+      //if playable is true => show iframe, if false play video
+  if(!playable){
+    console.log('show video')
+  }else{
+    console.log('show iframe')
+
+  }
+
+
+  }
 
 
 
   return (
 
     <Box sx={openGame ? styles.container : styles.none}>
-      <Grid container>
-        <Grid sx={{ ...styles.item }} item md={9}>
-          <img src={passedGameDetails.open} width={200} height={200} />
-          <button onClick={() => setOpenGame(false)}>Close game</button>
-        </Grid>
-        <Grid sx={{ ...styles.item }} item md={9}>
 
-        </Grid>
-      </Grid>
+      <Box sx={styles.cover}>
+        <Box sx={{ ...styles.item }}>
+          <img style={styles.coverImage} src={passedGameDetails.open} width={'100%'} height={'100%'} />
+        </Box>
+
+        <Box sx={[styles.item, styles.right]}>
+          <Box sx={styles.btnContainer}>
+            <button style={styles.btn} onClick={() => showNavbar()}>
+              <Typography variant="h3" fontSize={16} fontWeight="bold">X</Typography>
+            </button>
+          </Box>
+          <Box sx={styles.titleContainer}>
+            <Typography variant="h3" color="#fff" fontSize={24} fontWeight={'bold'}>
+              {passedGameDetails.name}
+            </Typography>
+          </Box>
+          <Box sx={styles.description}>
+            <Typography variant="h3" color="#fff" fontSize={18}>
+              {passedGameDetails.description}
+              
+            </Typography>
+          </Box>
+          <Box sx={styles.startContainer}>
+             <button style={styles.btnStart}  onClick={playGame} >
+             <Typography variant="h3" color="#fff" fontSize={14} fontWeight={'bold'}>
+              {'Start Game'}
+            </Typography>
+             </button>
+          </Box>
+        </Box>
+
+      </Box>
     </Box>
   )
 }
@@ -38,11 +83,12 @@ export default GameStart
 const styles = {
 
   container: {
-    border: '1px solid red',
+    // border: '1px solid red',
     height: '100vh',
     width: '100%',
     position: 'absolute',
-    background: 'red',
+    backdropFilter: 'blur(6px)',
+    // background: 'red',
     zIndex: '10'
   },
   none: {
@@ -50,7 +96,66 @@ const styles = {
   },
   item: {
     height: '100%',
-    boder: '1px solid red'
+    width: '55%',
+    // background:'red'
+  },
+  cover: {
+    padding: '50px',
+    height: '100%',
+    width: '100%',
+    display: 'flex'
+  },
+  coverImage: {
+    objectFit: 'cover',
+    contentFit: 'all-around',
+    objectPosition: 'center'
+  },
+  right: {
+    background: 'rgba(0, 0 ,0 ,0.3)',
+    width: '45%',
+    padding: '20px',
+    borderRadius: '0 20px  20px  0'
+  }
+  ,
+  btn: {
+    padding: '5px 10px',
+    outline: 'none',
+    wordBreak: 'break-all',
+    cursor: 'pointer'
+
+  },
+  btnContainer: {
+    // border:'1px solid red',
+    height: '50px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    marginBottom: "10px"
+  },
+  titleContainer: {
+    height: '100px',
+    display: 'flex',
+    alignItems: 'center',
+  },
+  description: {
+    // border: '1px solid red',
+    minHeight: '150px',
+    padding:'40px 0' 
+  },
+  startContainer:{
+    // border:'1px solid red',
+    minHeight: '300px',
+    display:'flex',
+    alignItems:'flex-end'
+  },
+  btnStart:{
+    padding: '10px',
+    background: 'coral',
+    outline:'none',
+    cursor:'pointer',
+    border:'none'
   }
 
 }
+
+

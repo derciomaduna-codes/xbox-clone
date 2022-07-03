@@ -1,6 +1,10 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import games from '../../components/json/games.json'
+import { Typography } from "@mui/material";
+
+
 
 // Import Swiper styles
 import "swiper/css";
@@ -29,23 +33,19 @@ export default function SwiperEffectCube() {
                 }}
 
                 style={styles.swiperContainer}
-                pagination={true}
+                // pagination={true}
                 // navigation={true}
-                modules={[EffectCube, Pagination]}
+                modules={[EffectCube,]}
                 className="mySwiper"
             >
-                <SwiperSlide style={styles}>
-                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" width="90px" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" width="90px" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" width="90px" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    {/* <img src="https://swiperjs.com/demos/images/nature-4.jpg" /> */}
-                </SwiperSlide>
+                {games.map(game => (
+
+                    <SwiperSlide style={styles.swiperSlide}>
+                        <img style={{ objectFit: 'cover', objectPosition:'center' }} width="100%" height="300px" src={game.img} />
+                        {/* <Typography color="#fff" fontWeight={'bold'}>{game.name}</Typography> */}
+                    </SwiperSlide>
+                ))}
+
             </Swiper>
         </>
     );
@@ -54,7 +54,7 @@ export default function SwiperEffectCube() {
 
 const styles = {
     swiperContainer: {
-        width: '500px'
+        width: '400px'
     },
     swiperSlide: {
 

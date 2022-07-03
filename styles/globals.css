@@ -23,12 +23,12 @@ a {
 ::-webkit-scrollbar-track {
   /* box-shadow: inset 0 0 5px grey;  */
   /* border-radius: 5px; */
-  background: #06051C;
+  background: #06051c;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background:#06051C; 
+  background: #06051c;
   border-radius: 5px;
 }
 
@@ -37,8 +37,7 @@ a {
   background: #b30000; 
 } */
 
-
-.box{
+.box {
   border-radius: 100%;
   animation-name: rotate;
   animation-duration: 1s;
@@ -48,20 +47,28 @@ a {
   /* animation-delay: ; */
 }
 
-
 @keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 
-/* @keyframes shake1 {
-  from{transform: translate(-800px);transition: 2s ease-in-out;}
-    to{ transform: translate(0px);transition: 2s ease-in-out;}
+/* glowing effect */
+
+.myGlower:hover {
+  border-color: #69c800;
+  -webkit-box-shadow: 0 0 10px #69c800;
+  -moz-box-shadow: 0 0 10px #69c800;
+  box-shadow: 0 0 10px #69c800;
 }
-@keyframes shake2 {
-  from{transform: translate(-800px);transition: 3s ease-in-out;}
-    to{ transform: translate(0px);transition: 3s ease-in-out;}
-} */
 
-
+.myGlower {
+  animation: glow 1s infinite alternate;
+  -webkit-transition: border 0.6s linear, box-shadow 0.6s linear;
+  -moz-transition: border 0.6s linear, box-shadow 0.6s linear;
+  transition: border 0.6s linear, box-shadow 0.6s linear;
+}

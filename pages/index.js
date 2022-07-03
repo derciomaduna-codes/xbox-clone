@@ -1,35 +1,37 @@
-import Head from 'next/head'
-import SectionHeader from '../components/utils/SectionHeader'
 import { Box } from '@mui/system'
-// import Game from '../components/Game'
-// import ReactJkMusicPlayer from 'react-jinke-music-player'
 import { useState, useEffect, useContext } from 'react'
 import { Grid, Typography } from '@mui/material'
 import { userContext } from '../components/context/context'
-import game from '../components/json/games.json'
-import RecentGames from '../components/games/recentGames'
-import SwiperEffectCube from '../components/swipers/SwiperEffectCube'
-import SwiperCoverFlow from '../components/swipers/SwiperCoverFlow'
-import GameStart from '../components/utils/GameStart'
 import Navbar from '../components/Navbar'
+import Gallery from '../components/games/Gallery'
+import StaticGames from '../components/games/StaticGames'
+import ColumnTwo from '../components/games/ColumnTwo'
+import XboxHome from '../components/games/XboxHome'
+import Store from '../components/games/Store'
+import GamePass from '../components/games/GamePass'
+import Community from '../components/games/Community'
+import AddMore from '../components/games/AddMore'
+import SuggestedApps from '../components/games/SugestedApps'
+import Events from '../components/games/Events'
+
 
 export default function Home() {
 
   let [loading, setLoading] = useState(true);
 
-  const [background, setBackground] = useState('demon.png')
 
   const [xboxImage, setXboxImage] = useState(true)
 
-  const { setShowNav, openGame, setOpenGame } = useContext(userContext)
+  const { setShowComp, openGame, setOpenGame , background , setBackground } = useContext(userContext)
 
   useEffect(() => {
+
     setTimeout(() => {
       setXboxImage(false)
-      setShowNav(true)
+      setShowComp(true)
       setLoading(false)
-
-    }, 7000)
+     
+    }, 1000)
 
   }, [])
 
@@ -48,20 +50,25 @@ export default function Home() {
           <Typography variant="h3" fontWeight={'bold'} fontSize={16} color="#fff" letterSpacing={'2px'}>...loading</Typography>
         </Box>
       </Box>
-
       :
-      //loading is set to false
-      <Box sx={{ ...styles.container, background: `url(${background})` }}>
+      //when loading is done
+      <Box onScroll={(e)=> console.log('scrolled at index')} sx={{ ...styles.container, 
+      // background: `url(${background})` 
+      }}>
+      
         <Navbar />
-        <GameStart />
-        <SectionHeader title={'All games'} />
-        <Grid container sx={styles.content}>
-          <Grid sx={{ display: 'flex', gap: 1, flexWrap: 'wrap' }} item md={12}>
-            {/* this is a test */}
-            <SwiperCoverFlow /> 
-          </Grid>
-        </Grid>
+        <XboxHome/>
+        <Store/>
+        <GamePass/>
+        <Community/>
+        <Events/>
+        <SuggestedApps/>
+        <Gallery/>
+        <AddMore/>
+        {/* <StaticGames/> */}
+        {/* <ColumnTwo/> */}
 
+         
       </Box>
   )
 }
@@ -70,7 +77,7 @@ const styles = {
   container: {
     minHeight: '100vh',
     width: '100%',
-    background: 'url("forza.jpg")',
+    background: 'rgb(6 60 0)',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
@@ -105,9 +112,11 @@ const styles = {
 
   },
   content: {
-    border: '1px solid #fff',
+    // border: '1px solid #fff',
     height: '400px'
   }
 }
 
 
+//how to use the window.onscroll event in react
+//get different pictures

@@ -6,22 +6,23 @@ import { useContext, useState } from 'react'
 
 function MyApp({ Component, pageProps }) {
 
-  const userName = useContext(userContext)
+  const userName = 'schad BTB'
   const [darkTheme, setDarkTheme] = useState(false)
-  const [showNav, setShowNav] = useState(false)
+  const [background, setBackground] = useState('forza.jpg')
+  const [showComp, setShowComp] = useState(false)
   const [openGame, setOpenGame] = useState(false)
-  const [passedGameDetails , setPassedGameDetails] = useState({
-      name:"",
-      img:"",
-      description:"",
-      open:""
+  const [passedGameDetails, setPassedGameDetails] = useState({
+    name: "",
+    img: "",
+    description: "",
+    open: "",
+    description: "",
+    playable:""
   })
 
   return (
-    <userContext.Provider value={{ userName: 'schadrack', darkTheme, setDarkTheme, showNav, setShowNav, openGame, setOpenGame, passedGameDetails ,setPassedGameDetails }} >
-      {/* <Layout> */}
-        <Component {...pageProps} />
-      {/* </Layout> */}
+    <userContext.Provider value={{ userName, darkTheme, setDarkTheme, showComp, setShowComp, openGame, setOpenGame, passedGameDetails, setPassedGameDetails, background, setBackground }} >
+      <Component {...pageProps} />
     </userContext.Provider>
   )
 }
