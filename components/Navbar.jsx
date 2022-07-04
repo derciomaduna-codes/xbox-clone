@@ -11,20 +11,24 @@ import Battery50Icon from "@mui/icons-material/Battery50";
 import Time from "../components/utils/Time";
 
 const Navbar = () => {
-  const { userName, darkTheme, setDarkTheme, setShowNav, showNav } =
+  const { userName, darkTheme, setDarkTheme, setShowComp, showComp } =
     useContext(userContext);
 
   return (
-    <Grid sx={showNav ? styles.container : styles.none} container>
+    <Grid sx={showComp ? styles.container : styles.none} container>
       <Grid sx={{ ...styles.item }} item md={3} sm={3} xs={12}>
         <Box sx={styles.user}>
           <Typography sx={{ fontWeight: "bold" }} color={"#fff"}>
             {userName[0].toUpperCase()}
           </Typography>
         </Box>
+        <Box sx={{ padding: "10px" , color:'#fff', fontSize:'14px',gap:1, display:'flex', flexDirection:'column' }}>
+          <Box>{userName}</Box>
+          {/* <Box>P.Box 2190</Box> */}
+        </Box>
       </Grid>
-      <Grid
-        sx={{ ...styles.item, justifyContent: "space-around" }}
+      {/* <Grid
+        sx={{ ...styles.item, justifyContent: "space-around" 
         item
         md={6}
         sm={6}
@@ -57,11 +61,11 @@ const Navbar = () => {
             <Link href="/store">Store</Link>
           </Typography>
         </Box>
-      </Grid>
+      </Grid> */}
       <Grid
         sx={{ ...styles.item, justifyContent: "flex-end" }}
         item
-        md={3}
+        md={9}
         sm={3}
         xs={12}
       >
@@ -83,7 +87,7 @@ const styles = {
   container: {
     // border:'1px solid red',
     height: "100px",
-    background: "rgba(0,0,0,0.1)",
+    // background: "rgba(0,0,0,0.1)",
     // display: 'none',
     padding: "0 100px",
     // position:'fixed',
@@ -96,7 +100,7 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    background: "#002b47",
+    background: "#15350d",
   },
   item: {
     // border:'1px solid #fff' ,

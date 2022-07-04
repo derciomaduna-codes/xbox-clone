@@ -19,16 +19,18 @@ export default function SwiperCoverFlow() {
   //  const [showOpenImg , setShowOpenImg] = useState(false)
 
 
-  const { openGame, setOpenGame, passedGameDetails, setPassedGameDetails } = useContext(userContext)
+  const { openGame, setOpenGame, passedGameDetails, setPassedGameDetails,setShowComp  } = useContext(userContext)
 
   const showGameStart = (game) => {
 
     setOpenGame(true)
-
+     setShowComp(false)
+     
     setPassedGameDetails({
       name: game.name,
       img: game.img,
-      open: game.open
+      open: game.open,
+      description:game.description
     })
 
   }
@@ -79,7 +81,7 @@ const styles = {
   swiperSlide: {
     // border: '1px solid blue',
     width: '300px',
-    height: 'auto'
+    height: '350px'
 
   }
 }

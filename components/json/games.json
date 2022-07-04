@@ -1,165 +1,184 @@
 [
   {
+    "name": "Call of duty: Black ops 4",
+    "img": "call-of-duty4.webp",
+    "id": "8",
+    "ratings": "5",
+    "category": "",
+    "date": "",
+    "status": "recent",
+    "open": "call-of-duty4.webp",
+    "description": "Experience reality the best of reality",
+    "playable": "false"
+  },
+  {
     "name": "HORIZON",
     "img": "horizon.jpg",
-     "id":"1" ,
-     "ratings":"5",
-     "category":"passive",
-     "date":"" ,
-     "status":"passive",
-     "open":"horizon2.png"
-    
+    "id": "1",
+    "ratings": "5",
+    "category": "passive",
+    "date": "",
+    "status": "passive",
+    "open": "horizon2.png",
+    "description": "Experience reality the best of reality",
+    "playable": "false"
   },
   {
     "name": "FORTNITE",
     "img": "fortnite.jpg",
-     "id":"2",
-     "category":"current",
-     "date":"" ,
-     "status":"current",
-     "open":"fortnite.jpg"
+    "id": "2",
+    "category": "current",
+    "date": "",
+    "status": "current",
+    "open": "fortnite.jpg",
+    "description": "Experience Fornite like never before",
+    "playable": "false"
+  },
+
+  {
+    "name": "Tomb raider",
+    "img": "tomb-raider1.webp",
+    "id": "4",
+    "ratings": "5",
+    "category": "passive",
+    "date": "",
+    "status": "passive",
+    "open": "tomb-raider.webp",
+    "description": "Join Lara croft in an Adventures you have never before",
+    "playable": "false"
+  },
+  {
+    "name": "UFC 4",
+    "img": "ufc4.webp",
+    "id": "5",
+    "ratings": "5",
+    "category": "",
+    "date": "",
+    "status": "recent",
+    "open": "ufc-open.jpeg",
+    "description": "Drop Kick your opponent till they cant stand up with the new ufc 4 ",
+    "playable":"false"
+  },
+
+  {
+    "name": "Injustice 2",
+    "img": "injustice.webp",
+    "id": "10",
+    "ratings": "5",
+    "category": "",
+    "date": "",
+    "status": "recent",
+    "open": "injustice.webp",
+    "description": "Experience reality the best of reality",
+    "playable": "false"
+  },
+  {
+    "name": "God of war",
+    "img": "god-of-war.jpg",
+    "id": "7",
+    "ratings": "5",
+    "category": "",
+    "date": "",
+    "status": "current",
+    "open": "god-war-open.jpg",
+    "description": "Experience reality the best of reality",
+    "playable": "false"
   },
   {
     "name": "FIFA 23",
     "img": "fifa 23.webp",
-     "id":"3",
-     "ratings":"5 stars",
-     "category":"",
-     "date":"" ,
-     "status":"recent",
-     "open":"0_23.jpg"
-    } ,
-    {
-      "name": "Tomb raider",
-      "img": "tomb-raider1.jpg",
-       "id":"4" ,
-       "ratings":"5",
-       "category":"passive",
-       "date":"" ,
-       "status":"passive"  ,
-       "open":"tomb-raider.webp"
-      
-    },
-    {
-      "name": "UFC 4",
-      "img": "ufc4.webp",
-       "id":"5" ,
-       "ratings":"5",
-       "category":"",
-       "date":"" ,
-       "status":"recent",
-       "open":"ufc4Open.jpeg"
-    },
-    {
-      "name": "Naruto: Ninja storm 4",
-      "img": "naruto-stormr4.webp",
-       "id":"6" ,
-       "ratings":"5",
-       "category":"",
-       "date":"" ,
-       "status":"recent",
-       "open":"naruto-open.jpg"
-      
-    },
-    {
-      "name": "God of war",
-      "img": "god-of-war.jpg",
-       "id":"7" ,
-       "ratings":"5",
-       "category":"",
-       "date":"" ,
-       "status":"current",
-       "open":"god-war-open.jpg"
-      
-    },
-    {
-      "name": "Call of duty: Black ops 4",
-      "img": "call-of-duty4.webp",
-       "id":"8" ,
-       "ratings":"5",
-       "category":"",
-       "date":"" ,
-       "status":"passive",
-       "open":"call-of-duty4.webp"
-      
-    },
-    {
-      "name": "The last of us 2",
-      "img": "last-of-us.webp",
-       "id":"9" ,
-       "ratings":"5",
-       "category":"",
-       "date":"" ,
-       "status":"current",
-       "open":"last-of-us-open.webp"
-      
-    },
-    {
-      "name": "Injustice",
-      "img": "injustice.webp",
-       "id":"10" ,
-       "ratings":"5",
-       "category":"",
-       "date":"" ,
-       "status":"passive",
-       "open":"injustice-open.jpg"
-      
-    },
-    {
-      "name": "Grand Theft Auto V",
-      "img": "gta-5.webp",
-       "id":"11" ,
-       "ratings":"5",
-       "category":"",
-       "date":"" ,
-       "status":"passive",
-       "open":"gta5-open.jpg"
-      
-    },
-    {
-      "name": "2K 19",
-      "img": "2k19.webp",
-       "id":"12" ,
-       "ratings":"5",
-       "category":"",
-       "date":"" ,
-       "status":"current",
-       "open":"2k19-open.webp"
-      
-    },
-    {
-      "name": "Need For speed",
-      "img": "speed.jpg",
-       "id":"13" ,
-       "ratings":"5",
-       "category":"",
-       "date":"" ,
-       "status":"passive",
-       "open":"horizon2.png"
-      
-    },
-    {
-      "name": "Marta is dead",
-      "img": "Martha-is-Dead.jpeg",
-       "id":"14" ,
-       "ratings":"5",
-       "category":"",
-       "date":"" ,
-       "status":"current",
-       "open":"Martha-is-Dead-open.jpg"
-    },
-    {
-      "name": "Hitmen: Abosolution",
-      "img": "hitmen3.jpg",
-       "id":"12" ,
-       "ratings":"5",
-       "category":"",
-       "date":"" ,
-       "status":"current",
-       "open":"hitmen-open.jpg"
-      
-    }
-    
+    "id": "3",
+    "ratings": "5 stars",
+    "category": "",
+    "date": "",
+    "status": "recent",
+    "open": "sh.jpg",
+    "description": "EA sports brings you the Latest fifa transfers and update , join and  witness the ultimate team EA sports brings you the Latest fifa transfers and update , join and  witness the ultimate team",
+    "playable": "false"
+  },
+  {
+    "name": "The last of us 2",
+    "img": "last-of-us.webp",
+    "id": "9",
+    "ratings": "5",
+    "category": "",
+    "date": "",
+    "status": "current",
+    "open": "last-of-us-open.webp",
+    "description": "Experience reality the best of reality",
+    "playable": "false"
+  },
 
-    
+  {
+    "name": "Grand Theft Auto V",
+    "img": "gta-5.webp",
+    "id": "11",
+    "ratings": "5",
+    "category": "",
+    "date": "",
+    "status": "passive",
+    "open": "gta5-open.jpg",
+    "description": "Experience reality the best of reality",
+    "playable": "false"
+  },
+  {
+    "name": "2K 19",
+    "img": "2k19.webp",
+    "id": "12",
+    "ratings": "5",
+    "category": "",
+    "date": "",
+    "status": "current",
+    "open": "2k19-open.webp",
+    "description": "Experience reality the best of reality",
+    "playable": "false"
+  },
+  {
+    "name": "Naruto: Ninja storm 4",
+    "img": "naruto-stormr4.webp",
+    "id": "6",
+    "ratings": "5",
+    "category": "",
+    "date": "",
+    "status": "current",
+    "open": "naruto-stormr4.webp",
+    "description": "Reanimated characters and more , story has never been better",
+    "playable": "false"
+  },
+  {
+    "name": "Need For speed",
+    "img": "speed.jpg",
+    "id": "13",
+    "ratings": "5",
+    "category": "",
+    "date": "",
+    "status": "passive",
+    "open": "horizon2.png",
+    "description": "Experience reality the best of reality",
+    "playable": "false"
+  },
+  {
+    "name": "Marta is dead",
+    "img": "Martha-is-Dead.jpg",
+    "id": "14",
+    "ratings": "5",
+    "category": "",
+    "date": "",
+    "status": "current",
+    "open": "Martha-is-Dead-open.jpg",
+    "description": "Experience reality the best of reality",
+    "playable": "false"
+  },
+  {
+    "name": "Hitmen: Abosolution",
+    "img": "hitmen3.jpg",
+    "id": "12",
+    "ratings": "5",
+    "category": "",
+    "date": "",
+    "status": "recent",
+    "open": "hitmen3.jpg",
+    "description": "Experience reality the best of reality",
+    "playable": "false"
+  }
 ]
