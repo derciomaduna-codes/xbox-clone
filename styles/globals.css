@@ -60,10 +60,10 @@ a {
 /* glowing effect */
 
 .myGlower:hover {
-  border-color: #69c800;
-  -webkit-box-shadow: 0 0 10px #69c800;
-  -moz-box-shadow: 0 0 10px #69c800;
-  box-shadow: 0 0 10px #69c800;
+  border-color: #34fff5;
+  -webkit-box-shadow: 0 0 10px #37ffff;
+  -moz-box-shadow: 0 0 10px #1effff;
+  box-shadow: 0 0 10px #12f7ff;
 }
 
 .myGlower {

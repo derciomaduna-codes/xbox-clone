@@ -15,7 +15,7 @@ import 'swiper/css/navigation';
 // import "./styles.css";
 
 // import required modules
-import { EffectCube, Pagination, Navigation } from "swiper";
+import { EffectCube, Pagination, Navigation, Autoplay } from "swiper";
 
 export default function SwiperEffectCube() {
     return (
@@ -29,17 +29,15 @@ export default function SwiperEffectCube() {
                     slideShadows: true,
                     shadowOffset: 20,
                     shadowScale: 0.94,
-
                 }}
-
                 style={styles.swiperContainer}
                 // pagination={true}
                 // navigation={true}
-                modules={[EffectCube,]}
+                autoplay={true}
+                modules={[EffectCube,Autoplay]}
                 className="mySwiper"
             >
                 {games.map(game => (
-
                     <SwiperSlide style={styles.swiperSlide}>
                         <img style={{ objectFit: 'cover', objectPosition:'center' }} width="100%" height="300px" src={game.img} />
                         {/* <Typography color="#fff" fontWeight={'bold'}>{game.name}</Typography> */}

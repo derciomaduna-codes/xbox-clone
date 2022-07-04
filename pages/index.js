@@ -31,7 +31,7 @@ export default function Home() {
       setShowComp(true)
       setLoading(false)
      
-    }, 1000)
+    }, 7000)
 
   }, [])
 
