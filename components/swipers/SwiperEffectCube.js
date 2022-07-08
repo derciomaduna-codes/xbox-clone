@@ -38,7 +38,7 @@ export default function SwiperEffectCube() {
                 className="mySwiper"
             >
                 {games.map(game => (
-                    <SwiperSlide style={styles.swiperSlide}>
+                    <SwiperSlide key={game.id} style={styles.swiperSlide}>
                         <img style={{ objectFit: 'cover', objectPosition:'center' }} width="100%" height="300px" src={game.img} />
                         {/* <Typography color="#fff" fontWeight={'bold'}>{game.name}</Typography> */}
                     </SwiperSlide>
